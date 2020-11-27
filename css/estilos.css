@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 47.2px;
+    height: 65px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid rgb(192, 189, 189);
+    padding-bottom: 20px;
+    /*position: fixed;
+    width: 100%;
+    background-color: white;*/
+}
+
+#page-active {
+    color:red;
+    font-weight: bolder;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.banner-section {
+    width: 100%;
+    height: 550px;
+    /*overflow: hidden;*/
+    background-image: url('../img/jane.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-section img {
+    display:none;
+    /*object-fit: cover;
+    width: 100%;
+    margin-top: -200px;*/
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.conteudo {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+section.musica {
+    overflow: hidden;
+    /*height: 400px;*/
+    padding-top: 60px;
+}
+
+section.musica div {
+    width: 48%;
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.desenho img {
+    width: 100%;
+}
+
+section.musica .playlist {
+    /*padding-top: 20px;*/
+    font-size: 20px;
+}
+
+div.playlist span{
+    color: #f9a826;
+    font-weight: bold;
+}
+
+ol li{
+    margin-top: 20px;
+}
+
+/*about*/
+.comentario {
+    text-align: center;
+}
+
+.foto-destaque img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.comentario h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*music*/
+.repertorio h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.repertorio {
+    margin-bottom: 40px;
+}
+
+.repertorio li, p {
+    font-size: 14px;
+}
+
+/*contato*/
+.formulario ,.mapa {
+    display: inline-block;
+    margin-top: 0;
+    width: 49%;
+    overflow: hidden;
+    height: 380px;
+}
+
+#nome, #email, #msg {
+    width: 100%;
+    border: rgb(207, 200, 200) solid 0.9px;
+}
+
+.send{
+    width: 70px;
+    height: 24px;
+    color: white;
+    background-color: rgb(235, 51, 18);
+    border: none;
+}
+
+.contato {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contato div {
+    border-top: rgba(128, 128, 128, 0.26) solid;
+    margin-top: 5px;
+}
+
+.contato div p:nth-child(1){
+    font-weight: bold;
+}
+
+p a {
+    color: blue;
+}
+
+/*viewport*/
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+        height: 65px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .conteudo {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    section.musica div {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.desenho img {
+        width: 100%;
+    }
+
+    section.musica .playlist {
+        padding: 20px 0px;
+        font-size: 15px;
+    }
+
+    .repertorio iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulario ,.mapa {
+        display: block;
+        margin-top: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
